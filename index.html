@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home - Club America</title>
+  <meta name="description" content="Van High School Turning Point USA chapter — meetings, events, forms, and contact information." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/clubamericalogo.png" class="logo-img" alt="Club America Van logo">
+        <div>
+          <h1>Club America Van</h1>
+          <p class="tag">Van High School</p>
+        </div>
+      </a>
+
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">
+        ☰
+      </button>
+
+      <nav id="mainNav" class="nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="forms.html">Forms</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h2>Club America Van</h2>
+          <p>Join Van High's chapter to learn about free markets, limited government, and civic engagement. Weekly meetings, guest speakers, and community service.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="forms.html#join">Sign up</a>
+            <a class="btn" href="calendar.html">Upcoming meetings</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="card card-cta">
+            <h3>Next meeting</h3>
+            <p id="nextMeeting">Loading…</p>
+            <small class="muted">Address: 985 N Maple St, Van, TX 75790</small>
+          </div>
+          <div class="card card-news">
+            <h4>Latest News</h4>
+              <li>Pancake Fundraiser May 1st</li>
+              <li>Float Day Friday</li>
+              <li>Schools Almost Out!</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <article class="feature">
+        <h3>What we do</h3>
+        <p>We host weekly meetings, host debates and speakers, and help students learn about economics, politics, and their civic rights.</p>
+      </article>
+
+      <article class="feature">
+        <h3>Get involved</h3>
+        <p>Complete the sign-up form on the <a href="forms.html">Forms</a> page to show your interest in the club.</p>
+      </article>
+
+      <article class="feature">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:contact@tpvan.com">contact@tpvan.com</a><br>
+        Meeting location: <strong>Career Center A</strong></p>
+      </article>
+    </section>
+
+    <section class="container spotlight">
+      <h3>Upcoming events</h3>
+      <div id="upcomingEvents" class="events-grid">
+        <!-- JS will inject event cards -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <strong>Club America</strong>
+          <div class="muted">985 N Maple St, Van, TX 75790</div>
+        </div>
+        <div>
+          <a href="about.html">About</a><br>
+          <a href="forms.html">Forms</a><br>
+          <a href="calendar.html">Calendar</a>
+        </div>
+        <div>
+          <small class="muted">Follow us</small>
+          <div class="social">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="Facebook">FB</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        © <span id="year"></span> Club America Van
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
