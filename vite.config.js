@@ -6,5 +6,5 @@ import react from '@vitejs/plugin-react'
 // For root deployment (custom domain): leave base as '/'
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  base: '/clubamerica/',
 })
