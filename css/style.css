@@ -723,6 +723,11 @@ ul { padding-left: 1.2em; }
 .section--tint .social-row a:hover,
 .form-card .social-row a:hover { background: var(--red); color: var(--white); border-color: var(--red); }
 
+/* Use this modifier for social icons placed on plain/light section
+   backgrounds (not blue or footer) — e.g. the Contact page sidebar. */
+.social-row--on-light a { color: var(--blue); background: var(--blue-tint); border-color: var(--line); }
+.social-row--on-light a:hover { background: var(--red); color: var(--white); border-color: var(--red); }
+
 /* 14. RESPONSIVE ----------------------------------------------------------------------*/
 @media (max-width: 980px) {
   .grid--4 { grid-template-columns: repeat(2, 1fr); }
