@@ -221,6 +221,12 @@ ul { padding-left: 1.2em; }
 
 .nav__actions { display: flex; align-items: center; gap: 1.25rem; }
 
+/* Mobile nav panel is hidden by default on all screen sizes; the
+   860px media query below re-enables it (still hidden until .is-open
+   is toggled by js/script.js). Without this base rule it falls back
+   to the browser default (display: block) and shows on desktop. */
+.nav__mobile-panel { display: none; }
+
 .nav__toggle {
   display: none;
   background: none;
