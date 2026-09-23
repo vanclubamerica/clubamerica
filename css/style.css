@@ -878,3 +878,131 @@ ul { padding-left: 1.2em; }
   .form-card { padding: 1.6rem; }
   .meeting-card { padding: 1.8rem; }
 }
+
+/* ==========================================================================
+   LEGAL PAGES
+   ========================================================================== */
+
+.legal-layout {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.legal-document {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 3rem 3.25rem;
+  box-shadow: var(--shadow-card);
+}
+
+.legal-document > *:first-child {
+  margin-top: 0;
+}
+
+.legal-document h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.85rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.legal-document h3 {
+  margin-top: 1.7rem;
+  margin-bottom: 0.65rem;
+}
+
+.legal-document p,
+.legal-document li {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+.legal-document p {
+  margin-bottom: 1rem;
+}
+
+.legal-document ul,
+.legal-document ol {
+  margin: 0.75rem 0 1.25rem;
+}
+
+.legal-document li {
+  margin-bottom: 0.45rem;
+}
+
+.legal-document strong {
+  color: var(--ink);
+}
+
+.legal-document a {
+  overflow-wrap: anywhere;
+}
+
+.legal-document table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0 1.75rem;
+  font-size: 0.9rem;
+}
+
+.legal-document th,
+.legal-document td {
+  border: 1px solid var(--line);
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.legal-document th {
+  background: var(--blue-tint);
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.legal-document .legal-callout {
+  background: var(--blue-tint);
+  border-left: 4px solid var(--red);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+}
+
+.legal-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.legal-meta::before {
+  content: "";
+  width: 24px;
+  height: 2px;
+  background: var(--red);
+}
+
+@media (max-width: 720px) {
+  .legal-document {
+    padding: 2rem 1.35rem;
+    border-radius: var(--radius-md);
+  }
+
+  .legal-document p,
+  .legal-document li {
+    font-size: 0.92rem;
+  }
+
+  .legal-document table {
+    display: block;
+    overflow-x: auto;
+    white-space: normal;
+  }
+}
