@@ -417,49 +417,44 @@ ul { padding-left: 1.2em; }
 .card p:last-child { margin-bottom: 0; }
 
 /* Officer cards — primary */
+.officer-grid { gap: 1.25rem; }
 .officer-card {
   background: var(--paper-raised);
   border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-md);
   overflow: hidden;
-  box-shadow: var(--shadow-card);
-  transition: transform var(--transition), box-shadow var(--transition);
 }
-.officer-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-card-hover); }
 .officer-card__photo { aspect-ratio: 4 / 5; overflow: hidden; background: var(--blue-tint); }
-.officer-card__photo img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition); }
-.officer-card:hover .officer-card__photo img { transform: scale(1.04); }
-.officer-card__body { padding: 1.4rem 1.5rem 1.6rem; }
+.officer-card__photo img { width: 100%; height: 100%; object-fit: cover; }
+.officer-card__body { padding: 1.25rem; }
 .officer-card__role {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.45;
   color: var(--red);
-  margin-bottom: 0.35rem;
-  display: block;
+  margin-bottom: 0.75rem;
 }
-.officer-card__name { margin-bottom: 0.5rem; }
+.officer-card__name { margin-bottom: 0.35rem; }
 .officer-card__bio { font-size: 0.94rem; margin-bottom: 0; }
 
 /* Secondary officer cards — wide, short, distinct treatment */
+.officer-list { display: grid; gap: 1rem; max-width: 48rem; }
 .officer-card--wide {
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  gap: 1rem;
   border-radius: var(--radius-sm);
-  border-left: 4px solid var(--blue);
-  padding: 1rem 1.3rem;
+  padding: 1rem;
 }
-.officer-card--wide:hover { border-left-color: var(--red); }
 .officer-card--wide .officer-card__photo {
-  width: 76px; height: 76px;
+  width: 64px; height: 80px;
   aspect-ratio: auto;
-  border-radius: 50%;
+  border-radius: var(--radius-sm);
   flex-shrink: 0;
 }
-.officer-card--wide .officer-card__body { padding: 0; }
-.officer-card--wide h3 { font-size: 1.05rem; margin-bottom: 0.1em; }
+.officer-card--wide .officer-card__body { min-width: 0; padding: 0; }
+.officer-card--wide .officer-card__name { font-size: 1.15rem; }
+.officer-card--wide .officer-card__role { color: var(--ink-soft); margin-bottom: 0; }
 
 /* News / article cards */
 .article-card {
